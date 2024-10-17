@@ -1,0 +1,22 @@
+CREATE TABLE Assembly (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    letter CHAR(1) NOT NULL,         -- For storing one alphabetic letter
+    numbers CHAR(5) NOT NULL,        -- For storing exactly five numbers
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP  -- For date and time
+);
+
+CREATE TABLE Assembly (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    motor CHAR(1) NOT NULL,          -- For storing one alphabetic letter for MOTOR
+    battery CHAR(5) NOT NULL,        -- For storing exactly five numbers for BATTERY
+    gear_box CHAR(5) NOT NULL,       -- For storing exactly five numbers for GEAR BOX
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP  -- For date and time
+);
+
+CREATE TABLE Testing (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    pcb CHAR(1) NOT NULL,                          -- For storing one alphabetic letter for PCB
+    testing_code CHAR(4) NOT NULL CHECK (testing_code REGEXP '^[A-Za-z]{4}$'),  -- Must contain exactly 4 letters
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,  -- For date and time
+    FOREIGN KEY (pcb) REFERENCES PCB(letter)       -- Assuming `letter` is the corresponding column in the PCB table
+);

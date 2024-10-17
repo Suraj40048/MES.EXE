@@ -1,0 +1,19 @@
+624 INFO: PyInstaller: 6.10.0, contrib hooks: 2024.8
+624 INFO: Python: 3.12.4
+687 INFO: Platform: Windows-10-10.0.19045-SP0
+687 INFO: Python environment: C:\Users\dell\Desktop\desktop
+687 INFO: wrote C:\Users\dell\Desktop\Project vayu\app.spec
+702 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\dell\\Desktop\\desktop\\Scripts\\pyinstaller.exe',
+ 'C:\\Users\\dell\\Desktop\\desktop\\python312.zip',
+ 'C:\\Users\\dell\\Desktop\\desktop\\DLLs',
+ 'C:\\Users\\dell\\Desktop\\desktop\\Lib',
+ 'C:\\Users\\dell\\Desktop\\desktop',
+ 'C:\\Users\\dell\\Desktop\\desktop\\Lib\\site-packages',
+ 'C:\\Users\\dell\\Desktop\\desktop\\Lib\\site-packages\\setuptools\\_vendor',
+ 'C:\\Users\\dell\\Desktop\\Project vayu']
+1312 INFO: checking Analysis
+1437 INFO: checking PYZ
+1530 INFO: checking PKG
+1608 INFO: Bootloader C:\Users\dell\Desktop\desktop\Lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+1608 INFO: checking EXE
